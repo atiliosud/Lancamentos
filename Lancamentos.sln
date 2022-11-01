@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lancamentos.Business", "Lan
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Documents", "00 - Documents", "{F7C2D906-BC38-4305-A026-9F43A8B3E453}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\Users\Dan Exradix\Downloads\Diagrama-DDD.jpg = ..\..\Users\Dan Exradix\Downloads\Diagrama-DDD.jpg
+		00 - Documents\Diagrama-DDD.jpg = 00 - Documents\Diagrama-DDD.jpg
 	EndProjectSection
 EndProject
 Global
