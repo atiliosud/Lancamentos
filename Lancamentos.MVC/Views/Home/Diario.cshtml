@@ -1,0 +1,63 @@
+﻿@using Lancamentos.Business.Models
+@model FluxoCaixaVM
+
+@{
+    ViewData["Title"] = "Novo Lançamento";
+}
+
+<h1>Fluxo de Caixa</h1>
+
+<hr />
+<dl class="row">
+    <dt class="col-sm-2">
+        Dia
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Dia)
+    </dd>
+    <dt class="col-sm-2">
+        Saldo
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Saldo)
+    </dd>
+</dl>
+
+<h3>Lançamentos</h3>
+
+<hr />
+<dl class="row">
+    @foreach (var lanca in Model.Lancamentos)
+    {
+        
+    <dt class="col-sm-2">
+        Descrição
+    </dt>
+    <dd class="col-sm-10">
+        @lanca.Descricao
+    </dd>
+    
+    <dt class="col-sm-2">
+        Valor
+    </dt>
+    <dd class="col-sm-10">
+        @lanca.Valor
+    </dd>
+    
+    <dt class="col-sm-2">
+        Tipo de pagamento
+    </dt>
+    <dd class="col-sm-10">
+        @lanca.TipoPagamento
+    </dd>
+    }
+</dl>
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
